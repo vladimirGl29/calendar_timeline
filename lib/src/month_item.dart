@@ -7,12 +7,11 @@ class MonthItem extends StatelessWidget {
   final bool isSelected;
   final Color? color;
 
-  MonthItem({
-    required this.name,
-    required this.onTap,
-    this.isSelected = false,
-    this.color
-  });
+  MonthItem(
+      {required this.name,
+      required this.onTap,
+      this.isSelected = false,
+      this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,7 @@ class MonthItem extends StatelessWidget {
         style: TextStyle(
           fontSize: 14,
           color: color ?? Colors.black87,
-          fontWeight: this.isSelected ? FontWeight.bold : FontWeight.w300,
+          fontWeight: this.isSelected ? FontWeight.w900 : FontWeight.w100,
         ),
       ),
     );
